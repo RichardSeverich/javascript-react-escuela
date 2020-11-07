@@ -19,6 +19,12 @@ const NavigationBar = () => {
   const navigateCoursesTable = () => { history.push("/");}
   const navigateSubjectsForm = () => { history.push("/");}
   const navigateSubjectsTable = () => { history.push("/");}
+  const navigateStudiesPlanForm = () => { history.push("/");}
+  const navigateStudiesPlanTable = () => { history.push("/");}
+  const navigateInscriptionsForm = () => { history.push("/inscription-form");}
+  const navigateInscriptionsTable = () => { history.push("/inscription-table");}
+  const navigateScoresForm = () => { history.push("/");}
+  const navigateScoresTable = () => { history.push("/");}
   const navigateReportUsers = () => { history.push("/");}
   const navigateReportStudents = () => { history.push("/");}
   const navigateReportCourses= () => { history.push("/");}
@@ -29,6 +35,9 @@ const NavigationBar = () => {
   const btnStudents = arrayBuilder.getArrayAdmin(navigateStudentsForm, navigateStudentsTable);
   const btnCourses = arrayBuilder.getArrayAdmin(navigateCoursesForm, navigateCoursesTable);
   const btnSubjects = arrayBuilder.getArrayAdmin(navigateSubjectsForm, navigateSubjectsTable);
+  const btnInscriptions = arrayBuilder.getArrayAdmin(navigateInscriptionsForm, navigateInscriptionsTable);
+  const btnScores = arrayBuilder.getArrayAdmin(navigateScoresForm, navigateScoresTable);
+  const btnStudiesPlan = arrayBuilder.getArrayAdmin(navigateStudiesPlanForm, navigateStudiesPlanTable);
   const btnReports = arrayBuilder.getArrayReports(
     navigateReportUsers, 
     navigateReportStudents,
@@ -62,6 +71,20 @@ const NavigationBar = () => {
         <ButtonGroup
           buttonGroupTitle={i18n.navBar.groupButtonsSubjects}
           buttonsArray={btnSubjects}
+        >
+        </ButtonGroup>
+        <ButtonGroup
+          buttonGroupTitle={i18n.navBar.groupButtonsStudiesPlan}
+          buttonsArray={btnStudiesPlan}
+        ></ButtonGroup>
+        <ButtonGroup
+          buttonGroupTitle={i18n.navBar.groupButtonsInscriptions}
+          buttonsArray={btnInscriptions}
+        >
+        </ButtonGroup>
+        <ButtonGroup
+          buttonGroupTitle={i18n.navBar.groupButtonsScores}
+          buttonsArray={btnScores}
         >
         </ButtonGroup>
         <ButtonGroup
