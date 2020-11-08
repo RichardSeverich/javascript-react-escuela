@@ -3,7 +3,7 @@ const i18n = {
   groupButtonStudents: "Adm. Alumnos",
   groupButtonsCourses: "Adm. Cursos",
   groupButtonsSubjects: "Adm. Materias",
-  groupButtonsStudiesPlan: "Adm. Plan de estudios",
+  groupButtonsStudiesPlan: "Adm. Plan Estudios",
   groupButtonsInscriptions: "Adm. Inscripciones",
   groupButtonsScores: "Adm. Notas",
   groupButtonsReports: "Adm. Reportes",

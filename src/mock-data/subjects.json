@@ -1,0 +1,92 @@
+{
+  "courses": [
+    {
+      "id": "1000",
+      "name": "ENTRENAMIENTO FISICO",
+      "creationDate": "2015-05-21",
+      "updateDate": "2015-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1001",
+      "name": "DEFENSA PERSONAL",
+      "creationDate": "2016-05-21",
+      "updateDate": "2016-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1002",
+      "name": "MARCHAS",
+      "creationDate": "2017-05-21",
+      "updateDate": "2017-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1003",
+      "name": "INSTRUCCIÓN DE TIRO",
+      "creationDate": "2018-05-21",
+      "updateDate": "2018-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1004",
+      "name": "NATACION",
+      "creationDate": "2019-05-21",
+      "updateDate": "2019-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1005",
+      "name": "LECTURA DE CARTAS Y NAVEGACION",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1006",
+      "name": "TECNICA DE ARMAS",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1007",
+      "name": "CRUCE DE OBSTACULOS",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1008",
+      "name": "COMUNICACIONES Y CRIPTOGRAFIA",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1009",
+      "name": "DOCTRINA DEL SATINADOR Y PLANEAMIENTO",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1010",
+      "name": "INSTRUCCION DE BOTES",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    }
+  ]
+}

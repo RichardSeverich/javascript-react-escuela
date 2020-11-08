@@ -1,0 +1,100 @@
+{
+  "courses": [
+    {
+      "id": "1000",
+      "name": "Satinador 2015",
+      "creationDate": "2015-05-21",
+      "updateDate": "2015-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1001",
+      "name": "Satinador 2016",
+      "creationDate": "2016-05-21",
+      "updateDate": "2016-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1002",
+      "name": "Satinador 2017",
+      "creationDate": "2017-05-21",
+      "updateDate": "2017-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1003",
+      "name": "Satinador 2018",
+      "creationDate": "2018-05-21",
+      "updateDate": "2018-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1004",
+      "name": "Satinador 2019",
+      "creationDate": "2019-05-21",
+      "updateDate": "2019-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1005",
+      "name": "Satinador 2020",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1006",
+      "name": "Condor 2015",
+      "creationDate": "2015-05-21",
+      "updateDate": "2015-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1007",
+      "name": "Condor 2016",
+      "creationDate": "2016-05-21",
+      "updateDate": "2016-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1008",
+      "name": "Condor 2017",
+      "creationDate": "2017-05-21",
+      "updateDate": "2017-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1009",
+      "name": "Condor 2018",
+      "creationDate": "2018-05-21",
+      "updateDate": "2018-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1010",
+      "name": "Condor 2019",
+      "creationDate": "2019-05-21",
+      "updateDate": "2019-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1011",
+      "name": "Condor 2020",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    }
+  ]
+}
