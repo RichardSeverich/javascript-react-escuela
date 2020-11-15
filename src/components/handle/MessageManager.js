@@ -70,7 +70,8 @@ const messageManager = {
   addMessages,
   editMessages,
   deleteMessages,
-  commonMessages
+  commonMessages,
+  invalidCredentials
 }
 
 export default messageManager;

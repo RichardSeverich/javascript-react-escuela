@@ -1,12 +1,13 @@
 import { users } from "./users.json";
 import { students } from "./students.json";
-
-var arrayUsers = users;
-var arrayStudents = students;
+import { courses } from "./courses.json";
+import { subjects } from "./subjects.json";
 
 const mockData = {
-  arrayUsers: arrayUsers,
-  arrayStudents: arrayStudents
+  arrayUsers: users,
+  arrayStudents: students,
+  arrayCourses: courses,
+  arraySubjects: subjects
 };
 
 export default mockData;

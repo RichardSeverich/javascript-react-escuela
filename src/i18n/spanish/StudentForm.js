@@ -1,5 +1,6 @@
 const i18n = {
   // Form Label
+  formTitle: "Alumno",
   formLabelDni: "Cedula Identidad",
   formLabelName: "Nombres",
   formLabelFatherLastName: "Apellido Paterno",

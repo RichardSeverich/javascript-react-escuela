@@ -15,14 +15,14 @@ const NavigationBar = () => {
   const navigateUsersTable = () => { history.push("/users-table");}
   const navigateStudentsForm = () => { history.push("/students-form");}
   const navigateStudentsTable = () => { history.push("/students-table");}
-  const navigateCoursesForm = () => { history.push("/");}
-  const navigateCoursesTable = () => { history.push("/");}
-  const navigateSubjectsForm = () => { history.push("/");}
-  const navigateSubjectsTable = () => { history.push("/");}
-  const navigateStudiesPlanForm = () => { history.push("/");}
+  const navigateCoursesForm = () => { history.push("/courses-form");}
+  const navigateCoursesTable = () => { history.push("/courses-table");}
+  const navigateSubjectsForm = () => { history.push("/subjects-form");}
+  const navigateSubjectsTable = () => { history.push("/subjects-table");}
+  const navigateStudiesPlanForm = () => { history.push("/courses-subjects-table-registry-courses");}
   const navigateStudiesPlanTable = () => { history.push("/");}
-  const navigateInscriptionsForm = () => { history.push("/inscription-form");}
-  const navigateInscriptionsTable = () => { history.push("/inscription-table");}
+  const navigateInscriptionsForm = () => { history.push("/");}
+  const navigateInscriptionsTable = () => { history.push("/");}
   const navigateScoresForm = () => { history.push("/");}
   const navigateScoresTable = () => { history.push("/");}
   const navigateReportUsers = () => { history.push("/");}

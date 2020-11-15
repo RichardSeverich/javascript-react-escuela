@@ -1,5 +1,6 @@
 const i18n = {
   // Form Label
+  formTitle: "Usuario",
   formLabelUsername: "Username",
   formLabelPassword: "Contrasena",
   formLabelDni: "Cedula Identidad",

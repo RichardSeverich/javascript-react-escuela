@@ -122,7 +122,7 @@ const Form = (props) => {
       <div className="container col-md-4">
         <div className="card">
           <div className="card-header">
-            <h3 align="center">Usuarios</h3>
+            <h3 align="center">{i18n.studentForm.formTitle}</h3>
           </div>
           <div className="card-body">
             <form className="">
@@ -212,7 +212,7 @@ const Form = (props) => {
                bind={bindWeapon}
               ></FormDropDown>
               <FormInput
-                labelContent={i18n.studentForm.formLabelPromo} 
+                labelContent={i18n.studentForm.formLabelPromo}
                 formText={i18n.studentForm.formTextPromo}
                 color={colorFormText.promo}
                 minLength="3"
@@ -224,7 +224,7 @@ const Form = (props) => {
                   className="btn btn-success"
                   onClick={handleAdd}
                   type="button" >
-                  Registrar
+                  {i18n.common.ButtonRegistration}
                 </button>
               </div>
             </form>

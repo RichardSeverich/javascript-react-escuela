@@ -8,6 +8,12 @@ const handleGetMock = (endpoint, callback) => {
     case "students/":
       callback(mockData.arrayStudents);
       break;
+    case "courses/":
+        callback(mockData.arrayCourses);
+      break;
+    case "subjects/":
+        callback(mockData.arraySubjects);
+    break;
     default:
       callback(mockData.arrayUsers);
   }
