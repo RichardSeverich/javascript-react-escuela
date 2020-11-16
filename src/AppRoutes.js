@@ -13,9 +13,9 @@ import CoursesForm from "./components/courses/Form";
 import CoursesTable from "./components/courses/Table";
 import SubjectsForm from "./components/subjects/Form";
 import SubjectsTable from "./components/subjects/Table";
-
-import CourseSubjectTableRegistryCourse from "./components/courses-subjects/courses-registry/Table";
+import CourseSubjectTableCourse from "./components/courses-subjects/courses/Table";
 import CourseSubjectTableRegistrySubject from "./components/courses-subjects/subjects-registry/Table";
+import CourseSubjectTableShowSubject from "./components/courses-subjects/subjects-show/Table";
 
 const AppRoutes = () => (
   <App>
@@ -28,8 +28,9 @@ const AppRoutes = () => (
       <Route exact path="/courses-table" component={CoursesTable} />
       <Route exact path="/subjects-form" component={SubjectsForm} />
       <Route exact path="/subjects-table" component={SubjectsTable} />
-      <Route exact path="/courses-subjects-table-registry-courses" component={CourseSubjectTableRegistryCourse} />
+      <Route exact path="/courses-subjects-table-courses" component={CourseSubjectTableCourse} />
       <Route exact path="/courses-subjects-table-registry-subjects" component={CourseSubjectTableRegistrySubject} />
+      <Route exact path="/courses-subjects-table-show-subjects" component={CourseSubjectTableShowSubject} />
       <Route exact path="/nav-bar" component={NavigationBar} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/" component={Login} />

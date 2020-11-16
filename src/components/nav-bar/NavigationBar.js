@@ -19,8 +19,18 @@ const NavigationBar = () => {
   const navigateCoursesTable = () => { history.push("/courses-table");}
   const navigateSubjectsForm = () => { history.push("/subjects-form");}
   const navigateSubjectsTable = () => { history.push("/subjects-table");}
-  const navigateStudiesPlanForm = () => { history.push("/courses-subjects-table-registry-courses");}
-  const navigateStudiesPlanTable = () => { history.push("/");}
+  const navigateStudiesPlanForm = () => { history.push({
+    pathname: "/courses-subjects-table-courses",
+    state: { 
+      isRegistry: true,
+    }
+  })};
+  const navigateStudiesPlanTable = () => { history.push({
+    pathname: "/courses-subjects-table-courses",
+    state: { 
+      isRegistry: false,
+    }
+  })};
   const navigateInscriptionsForm = () => { history.push("/");}
   const navigateInscriptionsTable = () => { history.push("/");}
   const navigateScoresForm = () => { history.push("/");}

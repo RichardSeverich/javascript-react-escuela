@@ -70,7 +70,7 @@ const getTableModel = (navigate) => {
         className="btn btn-success"
         onClick={() => navigate(row)}
       >
-        {i18n.common.ButtonRegistration}
+        {i18n.common.ButtonSelect}
       </button>
       ),
     },
