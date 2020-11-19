@@ -22,15 +22,15 @@ const Table = (props) => {
       handleGet(`courses/${course.id}/no-subjects`, setArrayData);
     }
     return () => { isMounted = false };
-  }, []);
+  }, [course]);
 
   const handleReset = () => {window.location.reload();};
 
   const handleAdd = (row) => {
     const username = window.localStorage.getItem("username");
     let body = {
-      courseId: course.id,
-      subjectId: row.id,
+      idCourse: course.id,
+      idSubject: row.id,
       createdBy: username,
       updatedBy: username,
     }

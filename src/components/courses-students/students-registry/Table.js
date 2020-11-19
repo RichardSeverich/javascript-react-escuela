@@ -19,10 +19,10 @@ const Table = (props) => {
   useEffect(() => {
     let isMounted = true;
     if (isMounted) {
-      handleGet(`/courses/${course.id}/no-students`, setArrayData);
+      handleGet(`courses/${course.id}/no-students`, setArrayData);
     }
     return () => { isMounted = false };
-  }, []);
+  }, [course]);
 
   const handleReset = () => {window.location.reload();};
 
@@ -34,7 +34,7 @@ const Table = (props) => {
       createdBy: username,
       updatedBy: username,
     }
-    handleCreate("/courses-students", body, handleReset);
+    handleCreate("courses-students", body, handleReset);
   };
 
   if (arrayData === undefined) {

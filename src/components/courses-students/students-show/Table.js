@@ -22,7 +22,7 @@ const Table = (props) => {
       handleGet(`courses/${course.id}/students`, setArrayData);
     }
     return () => { isMounted = false };
-  }, []);
+  }, [course]);
 
   if (arrayData === undefined) {
     return <Loading></Loading>;
