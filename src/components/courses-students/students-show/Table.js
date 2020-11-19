@@ -19,7 +19,7 @@ const Table = (props) => {
   useEffect(() => {
     let isMounted = true;
     if (isMounted) {
-      handleGet(`courses/${course.id}/subjects`, setArrayData);
+      handleGet(`courses/${course.id}/students`, setArrayData);
     }
     return () => { isMounted = false };
   }, []);
@@ -34,9 +34,9 @@ const Table = (props) => {
       <div className="container col-md-12">
         <div className="card card-table">
           <div className="card-header">
-            <h3 align="center">{i18n.common.TitleCoursesSubjects}</h3>
+            <h3 align="center">{i18n.common.TitleCoursesStudents}</h3>
             <h3 align="center">{course.name}</h3>
-            <h4 align="center">{i18n.subjectTable.tableTitle}</h4>
+            <h4 align="center">{i18n.studentTable.tableTitle}</h4>
           </div>
           <div className="card-body card-body-table">
             <CommonTable 

@@ -1,5 +1,4 @@
 // React
-import { useHistory } from "react-router";
 import React, { useState, useEffect } from "react";
 // OTHERS
 import NavigationBar from "./../../nav-bar/NavigationBar";
@@ -20,7 +19,7 @@ const Table = (props) => {
   useEffect(() => {
     let isMounted = true;
     if (isMounted) {
-      handleGet("subjects/", setArrayData);
+      handleGet(`courses/${course.id}/no-subjects`, setArrayData);
     }
     return () => { isMounted = false };
   }, []);

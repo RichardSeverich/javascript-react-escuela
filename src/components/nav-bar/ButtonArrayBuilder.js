@@ -1,7 +1,7 @@
 import i18n from "./../../i18n/i18n"
 
 const getArrayAdmin = (navigateForm, navigateTable) => {
-  const buttonsArrayUsers = [
+  const buttonsArray = [
     {
       navigate: navigateForm,
       ButtonContent: i18n.navBar.buttonForm
@@ -11,7 +11,7 @@ const getArrayAdmin = (navigateForm, navigateTable) => {
       ButtonContent: i18n.navBar.buttonTable
     },
   ]
- return buttonsArrayUsers;
+ return buttonsArray;
 }
 
 const getArrayReports = (

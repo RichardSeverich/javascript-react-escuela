@@ -31,8 +31,18 @@ const NavigationBar = () => {
       isRegistry: false,
     }
   })};
-  const navigateInscriptionsForm = () => { history.push("/");}
-  const navigateInscriptionsTable = () => { history.push("/");}
+  const navigateInscriptionsForm = () => { history.push({
+    pathname: "/courses-students-table-courses",
+    state: { 
+      isRegistry: true,
+    }
+  })};
+  const navigateInscriptionsTable = () => { history.push({
+    pathname: "/courses-students-table-courses",
+    state: { 
+      isRegistry: false,
+    }
+  })};
   const navigateScoresForm = () => { history.push("/");}
   const navigateScoresTable = () => { history.push("/");}
   const navigateReportUsers = () => { history.push("/");}

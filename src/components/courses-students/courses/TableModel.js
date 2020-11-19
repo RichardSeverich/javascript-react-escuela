@@ -2,12 +2,12 @@ import React from 'react';
 import { textFilter, dateFilter } from 'react-bootstrap-table2-filter';
 import i18n from "./../../../i18n/i18n";
 
-const getTableModel = (handleDelete) => {
+const getTableModel = (navigate) => {
 
   const columns = [
     {
       dataField: 'id',
-      text: i18n.subjectTable.headerId,
+      text: i18n.courseTable.headerId,
       sort: true,
       filter: textFilter(),
       headerStyle: {
@@ -15,8 +15,8 @@ const getTableModel = (handleDelete) => {
       }
     },
     {
-      dataField: 'subjectName',
-      text: i18n.subjectTable.headerName,
+      dataField: 'name',
+      text: i18n.courseTable.headerName,
       sort: true,
       filter: textFilter(),
       headerStyle: {
@@ -25,7 +25,7 @@ const getTableModel = (handleDelete) => {
     },
     {
       dataField: 'creationDate',
-      text: i18n.subjectTable.headerCreationDate,
+      text: i18n.courseTable.headerCreationDate,
       sort: true,
       filter: dateFilter(),
       headerStyle: {
@@ -34,7 +34,7 @@ const getTableModel = (handleDelete) => {
     },
     {
       dataField: 'updateDate',
-      text: i18n.subjectTable.headerModificationDate,
+      text: i18n.courseTable.headerModificationDate,
       sort: true,
       filter: dateFilter(),
       headerStyle: {
@@ -43,7 +43,7 @@ const getTableModel = (handleDelete) => {
     },
     {
       dataField: 'createdBy',
-      text: i18n.subjectTable.headerCreatedBy,
+      text: i18n.courseTable.headerCreatedBy,
       sort: true,
       filter: textFilter(),
       headerStyle: {
@@ -52,7 +52,7 @@ const getTableModel = (handleDelete) => {
     },
     {
       dataField: 'updatedBy',
-      text: i18n.subjectTable.headerUpdatedBy,
+      text: i18n.courseTable.headerUpdatedBy,
       sort: true,
       filter: textFilter(),
       headerStyle: {
@@ -60,20 +60,20 @@ const getTableModel = (handleDelete) => {
       }
     },
     {
-      dataField: 'delete',
-      text: i18n.studentTable.delete,
+      dataField: 'add',
+      text: i18n.common.ButtonRegistration,
       headerStyle: {
         width: '120px'
       },
       formatter: (cell, row, rowIndex) => (
-        <button
-        className="btn btn-danger"
-        onClick={() => handleDelete("courses-subjects/", row.id)}
-        >
-          {i18n.studentTable.delete}
-        </button>
+      <button
+        className="btn btn-success"
+        onClick={() => navigate(row)}
+      >
+        {i18n.common.ButtonSelect}
+      </button>
       ),
-    }
+    },
   ];
   return columns;
 }

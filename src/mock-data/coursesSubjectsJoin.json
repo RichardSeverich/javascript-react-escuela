@@ -1,0 +1,37 @@
+{
+  "coursesSubjectsJoin": [
+    {
+      "id": 1000,
+      "idCourse": 1003,
+      "idSubject": 1000,
+      "courseName": "Satinador 2018",
+      "subjectName": "ENTRENAMIENTO FISICO",
+      "creationDate": "2020-11-16 18:14:39",
+      "updateDate": "2020-11-20 18:14:39",
+      "createdBy": "alex",
+      "updatedBy": "torua"
+    },
+    {
+      "id": 1001,
+      "idCourse": 1003,
+      "idSubject": 1000,
+      "courseName": "Satinador 2018",
+      "subjectName": "ENTRENAMIENTO ARMAS",
+      "creationDate": "2020-11-16 18:14:39",
+      "updateDate": "2020-11-20 18:14:39",
+      "createdBy": "alex",
+      "updatedBy": "torua"
+    },
+    {
+      "id": 1002,
+      "idCourse": 1003,
+      "idSubject": 1000,
+      "courseName": "Satinador 2018",
+      "subjectName": "ASALTO ARMADO",
+      "creationDate": "2020-11-16 18:14:39",
+      "updateDate": "2020-11-20 18:14:39",
+      "createdBy": "alex",
+      "updatedBy": "torua"
+    }
+  ]
+}
