@@ -1,8 +1,11 @@
+body{
+  overflow-x:hidden;
+}
+
 .card-table {
   width: auto;
 }
 
 .card-body-table {
   overflow-x: auto;
-  height:760px;
 }
