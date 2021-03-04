@@ -19,6 +19,9 @@ import CourseSubjectTableShowSubject from "./components/courses-subjects/subject
 import CourseStudentsTableCourse from "./components/courses-students/courses/Table";
 import CourseStudentsTableRegistryStudents from "./components/courses-students/students-registry/Table";
 import CourseStudentsTableShowStudents from "./components/courses-students/students-show/Table";
+import ScoreCourse from "./components/score/courses/Table";
+import ScoreCourseStudent from "./components/score/students/Table";
+import ScoreCourseStudentSubject from "./components/score/student-course-subject/Table";
 
 const AppRoutes = () => (
   <App>
@@ -37,6 +40,9 @@ const AppRoutes = () => (
       <Route exact path="/courses-students-table-courses" component={CourseStudentsTableCourse} />
       <Route exact path="/courses-students-table-registry-students" component={CourseStudentsTableRegistryStudents} />
       <Route exact path="/courses-students-table-show-students" component={CourseStudentsTableShowStudents} />
+      <Route exact path="/score-course" component={ScoreCourse} />
+      <Route exact path="/score-course-student" component={ScoreCourseStudent} />
+      <Route exact path="/score-course-student-subject" component={ScoreCourseStudentSubject} />
       <Route exact path="/nav-bar" component={NavigationBar} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/" component={Login} />

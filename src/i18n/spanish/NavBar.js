@@ -15,6 +15,7 @@ const i18n = {
   buttonReportCourses: "Reporte Cursos",
   buttonReportSubjects: "Reporte Materias",
   buttonSystemParameters: "Parametros del sistema",
+  buttonRegistryShow: "Registrar y Mostrar",
   buttonExit: "Salir",
 };
 

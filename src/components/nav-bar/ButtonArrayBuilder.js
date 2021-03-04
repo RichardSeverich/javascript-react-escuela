@@ -14,6 +14,16 @@ const getArrayAdmin = (navigateForm, navigateTable) => {
  return buttonsArray;
 }
 
+const getArrayScore = (navigateForm) => {
+  const buttonsArrayScore = [
+    {
+      navigate: navigateForm,
+      ButtonContent: i18n.navBar.buttonRegistryShow
+    }
+  ]
+ return buttonsArrayScore;
+}
+
 const getArrayReports = (
   navigateReportUsers, 
   navigateReportStudents,
@@ -57,6 +67,7 @@ const getArrayOptions = (navigateSystem, navigateLogin) => {
 
 const arrayBuilder = {
   getArrayAdmin,
+  getArrayScore,
   getArrayReports,
   getArrayOptions
 }
