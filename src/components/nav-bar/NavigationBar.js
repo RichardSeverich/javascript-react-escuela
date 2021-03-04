@@ -43,8 +43,7 @@ const NavigationBar = () => {
       isRegistry: false,
     }
   })};
-  const navigateScoresForm = () => { history.push("/");}
-  const navigateScoresTable = () => { history.push("/");}
+  const navigateScoresForm = () => { history.push("/score-course");}
   const navigateReportUsers = () => { history.push("/");}
   const navigateReportStudents = () => { history.push("/");}
   const navigateReportCourses= () => { history.push("/");}
@@ -56,7 +55,7 @@ const NavigationBar = () => {
   const btnCourses = arrayBuilder.getArrayAdmin(navigateCoursesForm, navigateCoursesTable);
   const btnSubjects = arrayBuilder.getArrayAdmin(navigateSubjectsForm, navigateSubjectsTable);
   const btnInscriptions = arrayBuilder.getArrayAdmin(navigateInscriptionsForm, navigateInscriptionsTable);
-  const btnScores = arrayBuilder.getArrayAdmin(navigateScoresForm, navigateScoresTable);
+  const btnScores = arrayBuilder.getArrayScore(navigateScoresForm);
   const btnStudiesPlan = arrayBuilder.getArrayAdmin(navigateStudiesPlanForm, navigateStudiesPlanTable);
   const btnReports = arrayBuilder.getArrayReports(
     navigateReportUsers, 

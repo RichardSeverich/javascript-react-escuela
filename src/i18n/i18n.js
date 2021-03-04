@@ -7,6 +7,7 @@ import courseForm from "./spanish/CourseForm"
 import courseTable from "./spanish/CourseTable"
 import subjectForm from "./spanish/SubjectForm"
 import subjectTable from "./spanish/SubjectTable"
+import scoreHeadTable from "./spanish/ScoreHeadTable"
 import common from "./spanish/Common"
 import messages from "./spanish/Messages"
 
@@ -21,7 +22,8 @@ const i18n = {
   courseTable,
   subjectForm,
   subjectTable,
-  common
+  common,
+  scoreHeadTable
 }
 
 export default i18n;
