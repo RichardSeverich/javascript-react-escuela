@@ -5,7 +5,8 @@ import { useHistory } from "react-router";
 import ButtonGroup from "./ButtonGroup";
 import arrayBuilder from "./ButtonArrayBuilder"
 import i18n from "./../../i18n/i18n"
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
+import logoCondores from "./logo-condores.jpg";
 import "./NavigationBar.css";
 
 const NavigationBar = () => {
@@ -65,11 +66,16 @@ const NavigationBar = () => {
   );
   const btnOptions = arrayBuilder.getArrayOptions(navigateSystem, navigateLogin)
 
+  //logo react
+  /*<a className="navbar-brand" href="/nav-bar">
+    <img src={logo} className="App-logo-bar" alt="logo" />
+  </a>*/
+
   return (
     <div>
     <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
       <a className="navbar-brand" href="/nav-bar">
-        <img src={logo} className="App-logo-bar" alt="logo" />
+        <img src={logoCondores} className="App-logo-condor-bar" alt="logo" />
       </a>
       <ul className="navbar-nav">
         <ButtonGroup

@@ -33,9 +33,12 @@ const handleValidations = (data, setColorFormText, colorFormReset) => {
   } if(!(data.email.length>=3 && data.email.length<=30)){
     isValid = false;
     newColorFormText.email = dangerText;
-  } if(!(data.type==="admin" || data.type==="lawyer")){
+  } if(!(data.type==="admin" || data.type==="instructor")){
     isValid = false;
     newColorFormText.type = dangerText;
+  } if(data.grade===""){
+    isValid = false;
+    newColorFormText.grade = dangerText;
   } if(!/^[0-9]+$/.test(data.dni)){
     isValid = false;
     newColorFormText.dni = dangerText;

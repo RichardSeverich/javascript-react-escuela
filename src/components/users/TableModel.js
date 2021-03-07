@@ -121,6 +121,17 @@ const getTableModel = (navigateForm, handleEdit, handleDelete) => {
       }
     },
     {
+      dataField: 'grade',
+      text: i18n.userTable.headerGrade,
+      sort: true,
+      filter: selectFilter({
+        options: selectOptionsType
+      }),
+      headerStyle: {
+        width: '140px'
+      }
+    },
+    {
       dataField: 'creationDate',
       text: i18n.userTable.headerCreationDate,
       sort: true,

@@ -61,7 +61,17 @@ const Form = (props) => {
 
   const optionsGrade = [
     { value: "SBTTE", content: "SBTTE" },
-    { value: "ALF", content: "ALF" }
+    { value: "TTE", content: "TTE" },
+    { value: "CAP", content: "CAP" },
+    { value: "MAYOR", content: "MAYOR" },
+    { value: "TTE.CNEL", content: "TTE.CNEL" },
+    { value: "CNEL", content: "CNEL" },
+    { value: "SGTO INCL", content: "SGTO INCL" },
+    { value: "SGTO 1RO", content: "SGTO 1RO" },
+    { value: "SGTO 2DO", content: "SGTO 2DO" },
+    { value: "SOF MY", content: "SOF MY" },
+    { value: "SOF 1RO", content: "SOF 1RO" },
+    { value: "SOF 2DO", content: "SOF 2DO" },
   ]
   const optionsWeapon = [
     { value: "CAB", content: "CAB" },

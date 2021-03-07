@@ -2,7 +2,7 @@ import React from 'react';
 import { textFilter, dateFilter } from 'react-bootstrap-table2-filter';
 import i18n from "./../../../i18n/i18n";
 
-const getTableModel = (handleAdd) => {
+const getTableModel = (modal) => {
 
   const columns = [
     {
@@ -77,9 +77,12 @@ const getTableModel = (handleAdd) => {
       formatter: (cell, row, rowIndex) => (
       <button
         className="btn btn-success"
-        onClick={() => handleAdd(row)}
+        id="button-qualify"
+        data-toggle="modal" 
+        data-target="#qualifyModal"
+        onClick={() => modal(row)}
       >
-        {i18n.common.ButtonRegistration}
+        {i18n.common.ButtonQualify}
       </button>
       ),
     },

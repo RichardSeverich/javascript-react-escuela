@@ -14,6 +14,7 @@ const i18n = {
   headerAddress: "Direccion",
   headerEmail: "Correo Electronico",
   headerType: "Tipo",
+  headerGrade: "Grado",
   headerCreationDate: "Fecha de creacion",
   headerModificationDate: "Fecha de modificacion",
   headerCreatedBy: "Creado por",
