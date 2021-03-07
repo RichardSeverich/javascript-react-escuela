@@ -49,8 +49,8 @@ const Table = (props) => {
       <div className="container col-md-12">
         <div className="card card-table">
           <div className="card-header">
-            <h3 align="center">{i18n.common.TitleCoursesSubjects}</h3>
-            <h3 align="center">{course.name}</h3>
+            <h3 align="center">{i18n.common.TitleCoursesSubjectsRegistry}</h3>
+            <h3 align="center">{i18n.common.headCourse + course.name}</h3>
             <h4 align="center">{i18n.subjectTable.tableTitle}</h4>
           </div>
           <div className="card-body card-body-table">

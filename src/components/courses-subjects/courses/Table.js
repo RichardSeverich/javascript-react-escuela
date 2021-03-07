@@ -13,18 +13,22 @@ import "./../../common/Table.css";
 const Table = (props) => {
 
   // Declare constant
-  const [isRegistry] = useState(props.location.state.isRegistry);
+  const [isRegistry, setIsRegistry] = useState(props.location.state.isRegistry);
   const [arrayData, setArrayData] = useState();
   const history = useHistory();
 
   // Hooks
   useEffect(() => {
     let isMounted = true;
+    setIsRegistry(props.location.state.isRegistry);
     if (isMounted) {
       handleGet("courses/", setArrayData);
     }
-    return () => { isMounted = false };
-  }, []);
+    return () => { 
+      window.location.reload();
+      isMounted = false 
+    };
+  }, [props]);
 
   const navigate= (row) => {
     let pathRegistry =  "/courses-subjects-table-registry-subjects";
@@ -49,8 +53,13 @@ const Table = (props) => {
       <div className="container col-md-12">
         <div className="card card-table">
           <div className="card-header">
-            <h3 align="center">{i18n.common.TitleCoursesSubjects}</h3>
-            <h3 align="center">{i18n.courseTable.tableTitle}</h3>
+            <h3 align="center">{
+                isRegistry?
+                i18n.common.TitleCoursesSubjectsRegistry :
+                i18n.common.TitleCoursesSubjectsShow
+              }
+            </h3>
+            <h3 align="center">{i18n.common.headSelectCourse}</h3>
           </div>
           <div className="card-body card-body-table">
             <CommonTable 

@@ -1,0 +1,70 @@
+{
+  "score": [
+    {
+      "id": 1000,
+      "idSubject": 1000,
+      "idStudent": 1001,
+      "subjectName": "ENTRENAMIENTO FISICO",
+      "subjectScore": "70",
+      "creationDate": "2021-05-21",
+      "updateDate": "2021-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": 1001,
+      "idSubject": 1001,
+      "idStudent": 1001,
+      "subjectName": "DEFENSA PERSONAL",
+      "subjectScore": "80",
+      "creationDate": "2021-05-21",
+      "updateDate": "2021-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": 1002,
+      "idSubject": 1002,
+      "idStudent": 1001,
+      "subjectName": "MARCHAS",
+      "subjectScore": "50",
+      "creationDate": "2021-06-19",
+      "updateDate": "2021-06-20",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": 1003,
+      "idSubject": 1003,
+      "idStudent": 1001,
+      "subjectName": "INSTRUCCIÓN DE TIRO",
+      "subjectScore": "50",
+      "creationDate": "2021-06-19",
+      "updateDate": "2021-06-20",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": 1004,
+      "idSubject": 1004,
+      "idStudent": 1001,
+      "subjectName": "NATACION",
+      "subjectScore": "50",
+      "creationDate": "2021-06-19",
+      "updateDate": "2021-06-20",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": 1005,
+      "idSubject": 1005,
+      "idStudent": 1001,
+      "subjectName": "LECTURA DE CARTAS Y NAVEGACION",
+      "subjectScore": "50",
+      "creationDate": "2021-06-19",
+      "updateDate": "2021-06-20",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    }
+  ]
+}

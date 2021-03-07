@@ -23,8 +23,9 @@ const Form = (props) => {
     address: "",
     email: "",
     type: "",
+    grade: ""
   }
-  
+
   const [isEdit, setIsEdit] = useState(props.location.state);
   const [colorFormText, setColorFormText] = useState(colorFormReset);
 
@@ -41,6 +42,7 @@ const Form = (props) => {
   let address = isEdit ? isEdit.data.address : "";
   let email = isEdit ? isEdit.data.email : "";
   let type = isEdit ? isEdit.data.type : "";
+  let grade = isEdit ? isEdit.data.grade : "";
 
   const { value: valueUsername, bind: bindUsername, reset: resetUsername } = useInput(username);
   const { value: valuePassword, bind: bindPassword, reset: resetPassword } = useInput(password);
@@ -55,9 +57,26 @@ const Form = (props) => {
   const { value: valueAddress, bind: bindAddress, reset: resetAddress } = useInput(address);
   const { value: valueEmail, bind: bindEmail, reset: resetEmail } = useInput(email);
   const { value: valueType, bind: bindType, reset: resetType } = useInput(type);
+  const { value: valueGrade, bind: bindGrade, reset: resetGrade } = useInput(grade);
+
   const optionsType = [
     { value: "admin", content: "Administrador" },
     { value: "instructor", content: "Instructor" }
+  ]
+
+  const optionsGrade = [
+    { value: "SBTTE", content: "SBTTE" },
+    { value: "TTE", content: "TTE" },
+    { value: "CAP", content: "CAP" },
+    { value: "MAYOR", content: "MAYOR" },
+    { value: "TTE.CNEL", content: "TTE.CNEL" },
+    { value: "CNEL", content: "CNEL" },
+    { value: "SGTO INCL", content: "SGTO INCL" },
+    { value: "SGTO 1RO", content: "SGTO 1RO" },
+    { value: "SGTO 2DO", content: "SGTO 2DO" },
+    { value: "SOF MY", content: "SOF MY" },
+    { value: "SOF 1RO", content: "SOF 1RO" },
+    { value: "SOF 2DO", content: "SOF 2DO" },
   ]
 
   const handleReset = () => {
@@ -72,6 +91,7 @@ const Form = (props) => {
     resetAddress();
     resetEmail();
     resetType();
+    resetGrade();
   }
   const handleAdd = () => {
     const username = window.localStorage.getItem("username");
@@ -87,6 +107,7 @@ const Form = (props) => {
       address: valueAddress,
       email: valueEmail,
       type: valueType,
+      grade: valueGrade,
       createdBy: username,
       updatedBy: username,
     }
@@ -196,6 +217,13 @@ const Form = (props) => {
                options={optionsType}
                color={colorFormText.type}
                bind={bindType}
+              ></FormDropDown>
+              <FormDropDown
+               labelContent={i18n.studentForm.formLabelGrade}
+               formText={i18n.studentForm.formTextGrade}
+               options={optionsGrade}
+               color={colorFormText.grade}
+               bind={bindGrade}
               ></FormDropDown>
               <div className="text-center">
                 <button

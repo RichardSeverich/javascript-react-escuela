@@ -10,6 +10,7 @@ import subjectTable from "./spanish/SubjectTable"
 import scoreHeadTable from "./spanish/ScoreHeadTable"
 import common from "./spanish/Common"
 import messages from "./spanish/Messages"
+import qualifyModal from "./spanish/QualifyModal"
 
 const i18n = {
   navBar,
@@ -23,7 +24,8 @@ const i18n = {
   subjectForm,
   subjectTable,
   common,
-  scoreHeadTable
+  scoreHeadTable,
+  qualifyModal
 }
 
 export default i18n;

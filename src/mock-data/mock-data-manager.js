@@ -4,6 +4,7 @@ import { courses } from "./courses.json";
 import { subjects } from "./subjects.json";
 import { coursesStudentsJoin } from "./coursesStudentsJoin.json";
 import { coursesSubjectsJoin } from "./coursesSubjectsJoin.json";
+import { score } from "./score.json";
 
 const mockData = {
   arrayUsers: users,
@@ -12,7 +13,7 @@ const mockData = {
   arraySubjects: subjects,
   arrayCoursesStudentsJoin: coursesStudentsJoin,
   arrayCoursesSubjectsJoin: coursesSubjectsJoin,
-
+  arrayScore: score
 };
 
 export default mockData;

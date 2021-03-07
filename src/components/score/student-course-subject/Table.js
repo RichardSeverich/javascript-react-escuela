@@ -1,5 +1,4 @@
 // React
-import { useHistory } from "react-router";
 import React, { useState, useEffect } from "react";
 // OTHERS
 import NavigationBar from "./../../nav-bar/NavigationBar";
@@ -7,7 +6,8 @@ import CommonTable from "./../../common/CommonTable";
 import Loading from "./../../common/Loading"
 import i18n from "./../../../i18n/i18n";
 import getTableModel from "./TableModel";
-import { handleGet, handleCreate } from "./../../handle/HandleManager";
+import { handleGet } from "./../../handle/HandleManager";
+import QualifyModal from "./QualifyModal";
 import "./../../common/Table.css";
 
 const Table = (props) => {
@@ -17,8 +17,9 @@ const Table = (props) => {
   const [student] = useState(props.location.state.student);
   const [arrayScore, setArrayScore] = useState();
   const [arrayNoScore, setArrayNoScore] = useState();
-  const [band, setBand] = useState(true);
-  const history = useHistory();
+  const [bandArray, setBandArray] = useState(true);
+  const [rowData, setRowData] = useState();
+  const [studentAverage, setStudentAverage] = useState(0);
 
   // Hooks
   useEffect(() => {
@@ -30,61 +31,62 @@ const Table = (props) => {
     return () => { isMounted = false };
   }, [course,student]);
 
-  const handleReset = () => {window.location.reload();};
-
-  const handleAdd = (row) => {
-    const username = window.localStorage.getItem("username");
-    let body = {
-      idSubject: row.id,
-      idStudent: student.id,
-      score: row.score,
-      createdBy: username,
-      updatedBy: username,
-    }
-    handleCreate("subjects-students", body, handleReset);
+  const updatePropsForModal = (row) => {
+    setRowData(row);
   };
 
   if (arrayScore === undefined || arrayNoScore === undefined) {
     return <Loading></Loading>;
   }
 
-  if(band) {
+  if(bandArray) {
     let count = -1;
+    let average = 0;
+    let subjectsTotal = arrayNoScore.length;
     arrayNoScore.forEach(function(elementNoScore) {
-      let band = false;
+      let existElement = false;
       let saveElement = {};
+      saveElement = elementNoScore;
       arrayScore.forEach(function(elementScore) {
-        saveElement = elementNoScore;
         if(elementScore.idSubject === elementNoScore.idSubject){
-          band = true;
+          existElement = true;
+          average += parseInt(elementScore.subjectScore);
         }
       });
-      if(band == false){
+      if(!existElement){
         saveElement["subjectScore"] = 0;
         saveElement["id"] = count;
         count--;
         arrayScore.push(saveElement);
       }
     });
+    if(subjectsTotal !== 0){
+      average = average / subjectsTotal;
+      setStudentAverage(average);
+    }
     setArrayScore(arrayScore);
-    setBand(false);
+    setBandArray(false);
   }
 
   return (
     <div>
       <NavigationBar></NavigationBar>
+      <QualifyModal
+        student={student}
+        data={rowData}>
+      </QualifyModal>
       <div className="container col-md-12">
         <div className="card card-table">
           <div className="card-header">
             <h3 align="center">{i18n.common.TitleScore}</h3>
             <h3 align="center">{i18n.scoreHeadTable.headCourse + course.name}</h3>
             <h3 align="center">{i18n.scoreHeadTable.headStudent + student.studentName + " " + student.studentFatherLastName}</h3>
-            <h4 align="center">{i18n.subjectTable.tableTitle}</h4>
+            <h4 align="center">{i18n.common.headAverage + " " + studentAverage}</h4>
           </div>
           <div className="card-body card-body-table">
             <CommonTable 
               arrayData={arrayScore}
-              columns={getTableModel(handleAdd)}>
+              columns={getTableModel(updatePropsForModal)}>
             </CommonTable>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { textFilter, dateFilter, selectFilter } from 'react-bootstrap-table2-filter';
+import { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import i18n from "./../../../i18n/i18n";
 
 const getTableModel = (navigate) => {
