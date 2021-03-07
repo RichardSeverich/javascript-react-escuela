@@ -7,10 +7,15 @@ const handleGetMock = (endpoint, callback) => {
   if(endpoint.includes("courses/") && endpoint.includes("/subjects")){ 
     return callback(mockData.arrayCoursesSubjectsJoin);
   }
+  //localhost:8080/api/v1/courses/{aux}/students/{id}
+  if(endpoint.includes("courses/") && endpoint.includes("/students/")){ 
+    return callback(mockData.arrayScore);
+  }
   //localhost:8080/api/v1/courses/{id}/students
   if(endpoint.includes("courses/") && endpoint.includes("/students")){ 
     return callback(mockData.arrayCoursesStudentsJoin);
   }
+
   switch(endpoint) {
     case "users/":
       callback(mockData.arrayUsers);
