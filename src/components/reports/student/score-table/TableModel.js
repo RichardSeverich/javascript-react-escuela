@@ -1,22 +1,39 @@
-import React from 'react';
 import { textFilter, dateFilter } from 'react-bootstrap-table2-filter';
-import i18n from "./../../../i18n/i18n";
+import i18n from "./../../../../i18n/i18n";
 
-const getTableModel = (navigate) => {
+const getTableModel = () => {
 
   const columns = [
     {
       dataField: 'id',
-      text: i18n.courseTable.headerId,
+      text: i18n.reports.headerId,
       sort: true,
       filter: textFilter(),
       headerStyle: {
-        width: '120px'
+        width: '150px'
       }
     },
     {
-      dataField: 'name',
-      text: i18n.courseTable.headerName,
+      dataField: 'courseName',
+      text: i18n.reports.headerCourse,
+      sort: true,
+      filter: textFilter(),
+      headerStyle: {
+        width: '150px'
+      }
+    },
+    {
+      dataField: 'subjectName',
+      text: i18n.reports.headerSubject,
+      sort: true,
+      filter: textFilter(),
+      headerStyle: {
+        width: '150px'
+      }
+    },
+    {
+      dataField: 'subjectScore',
+      text: i18n.subjectTable.headerScore,
       sort: true,
       filter: textFilter(),
       headerStyle: {
@@ -25,7 +42,7 @@ const getTableModel = (navigate) => {
     },
     {
       dataField: 'creationDate',
-      text: i18n.courseTable.headerCreationDate,
+      text: i18n.subjectTable.headerCreationDate,
       sort: true,
       filter: dateFilter(),
       headerStyle: {
@@ -34,7 +51,7 @@ const getTableModel = (navigate) => {
     },
     {
       dataField: 'updateDate',
-      text: i18n.courseTable.headerModificationDate,
+      text: i18n.subjectTable.headerModificationDate,
       sort: true,
       filter: dateFilter(),
       headerStyle: {
@@ -43,7 +60,7 @@ const getTableModel = (navigate) => {
     },
     {
       dataField: 'createdBy',
-      text: i18n.courseTable.headerCreatedBy,
+      text: i18n.subjectTable.headerCreatedBy,
       sort: true,
       filter: textFilter(),
       headerStyle: {
@@ -52,28 +69,13 @@ const getTableModel = (navigate) => {
     },
     {
       dataField: 'updatedBy',
-      text: i18n.courseTable.headerUpdatedBy,
+      text: i18n.subjectTable.headerUpdatedBy,
       sort: true,
       filter: textFilter(),
       headerStyle: {
         width: '160px'
       }
-    },
-    {
-      dataField: 'add',
-      text: i18n.common.ButtonRegistration,
-      headerStyle: {
-        width: '120px'
-      },
-      formatter: (cell, row, rowIndex) => (
-      <button
-        className="btn btn-success"
-        onClick={() => navigate(row)}
-      >
-        {i18n.common.ButtonSelect}
-      </button>
-      ),
-    },
+    }
   ];
   return columns;
 }

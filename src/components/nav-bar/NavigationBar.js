@@ -45,10 +45,10 @@ const NavigationBar = () => {
     }
   })};
   const navigateScoresForm = () => { history.push("/score-course");}
-  const navigateReportUsers = () => { history.push("/");}
-  const navigateReportStudents = () => { history.push("/");}
-  const navigateReportCourses= () => { history.push("/");}
-  const navigateReportSubjects= () => { history.push("/");}
+  const navigateReportStudent = () => { history.push("/report-all-student");}
+  const navigateReportCourse = () => { history.push("/report-all-course");}
+  const navigateReportStudentCourse= () => { history.push("/report-student");}
+  const navigateReportCourseStudent= () => { history.push("/report-course");}
   const navigateSystem= () => { history.push("/");}
   const navigateLogin = () => { history.push("/login");}
   const btnUsers = arrayBuilder.getArrayAdmin(navigateUsersForm, navigateUsersTable);
@@ -59,10 +59,10 @@ const NavigationBar = () => {
   const btnScores = arrayBuilder.getArrayScore(navigateScoresForm);
   const btnStudiesPlan = arrayBuilder.getArrayAdmin(navigateStudiesPlanForm, navigateStudiesPlanTable);
   const btnReports = arrayBuilder.getArrayReports(
-    navigateReportUsers, 
-    navigateReportStudents,
-    navigateReportCourses,
-    navigateReportSubjects
+    navigateReportStudent, 
+    navigateReportCourse,
+    navigateReportStudentCourse,
+    navigateReportCourseStudent
   );
   const btnOptions = arrayBuilder.getArrayOptions(navigateSystem, navigateLogin)
 

@@ -1,8 +1,7 @@
-import React from 'react';
 import { textFilter, dateFilter } from 'react-bootstrap-table2-filter';
-import i18n from "./../../i18n/i18n";
+import i18n from "./../../../../i18n/i18n";
 
-const getTableModel = (navigateForm, handleEdit, handleDelete) => {
+const getTableModel = () => {
 
   const columns = [
     {
@@ -15,12 +14,48 @@ const getTableModel = (navigateForm, handleEdit, handleDelete) => {
       }
     },
     {
-      dataField: 'name',
-      text: i18n.subjectTable.headerName,
+      dataField: 'studentDni',
+      text: i18n.reports.headerStudentDni,
       sort: true,
       filter: textFilter(),
       headerStyle: {
-        width: '360px'
+        width: '150px'
+      }
+    },
+    {
+      dataField: 'studentName',
+      text: i18n.reports.headerStudent,
+      sort: true,
+      filter: textFilter(),
+      headerStyle: {
+        width: '150px'
+      }
+    },
+    {
+      dataField: 'studentFatherLastName',
+      text: i18n.reports.headerStudentFatherLastName,
+      sort: true,
+      filter: textFilter(),
+      headerStyle: {
+        width: '150px'
+      }
+    },
+    {
+      dataField: 'subjectName',
+      text: i18n.reports.headerSubject,
+      sort: true,
+      filter: textFilter(),
+      headerStyle: {
+        width: '150px'
+      }
+    },
+    {
+      dataField: 'subjectScore',
+      text: i18n.subjectTable.headerScore,
+      sort: true,
+      filter: textFilter(),
+      headerStyle: {
+        width: '150px'
       }
     },
     {
@@ -29,7 +64,7 @@ const getTableModel = (navigateForm, handleEdit, handleDelete) => {
       sort: true,
       filter: dateFilter(),
       headerStyle: {
-        width: '220px'
+        width: '150px'
       }
     },
     {
@@ -38,7 +73,7 @@ const getTableModel = (navigateForm, handleEdit, handleDelete) => {
       sort: true,
       filter: dateFilter(),
       headerStyle: {
-        width: '220px'
+        width: '150px'
       }
     },
     {
@@ -58,36 +93,6 @@ const getTableModel = (navigateForm, handleEdit, handleDelete) => {
       headerStyle: {
         width: '160px'
       }
-    },
-    {
-      dataField: 'edit',
-      text: i18n.subjectTable.edit,
-      headerStyle: {
-        width: '120px'
-      },
-      formatter: (cell, row, rowIndex) => (
-      <button
-        className="btn btn-warning"
-        onClick={() => handleEdit(navigateForm, row)}
-      >
-        {i18n.subjectTable.edit}
-      </button>
-      ),
-    },
-    {
-      dataField: 'delete',
-      text: i18n.subjectTable.delete,
-      headerStyle: {
-        width: '120px'
-      },
-      formatter: (cell, row, rowIndex) => (
-        <button
-        className="btn btn-danger"
-        onClick={() => handleDelete("subjects/", row.id)}
-        >
-          {i18n.subjectTable.delete}
-        </button>
-      ),
     }
   ];
   return columns;

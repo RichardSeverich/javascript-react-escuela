@@ -22,6 +22,16 @@ import CourseStudentsTableShowStudents from "./components/courses-students/stude
 import ScoreCourse from "./components/score/courses/Table";
 import ScoreCourseStudent from "./components/score/students/Table";
 import ScoreCourseStudentSubject from "./components/score/student-course-subject/Table";
+import ReportAllStudent from "./components/reports/student/table/Table";
+import ReportAllStudentScore from "./components/reports/student/score-table/Table";
+import ReportAllCourse from "./components/reports/course/course-table/Table";
+import ReportAllCourseScore from "./components/reports/course/course-score/Table";
+import ReportCourse from "./components/reports/course-student/courses/Table";
+import ReportCourseStudent from "./components/reports/course-student/students/Table";
+import ReportCourseStudentSubject from "./components/reports/course-student/course-student-subject/Table";
+import ReportStudent from "./components/reports/student-course/students/Table";
+import ReportStudentCourse from "./components/reports/student-course/courses/Table";
+import ReportStudentCourseSubject from "./components/reports/student-course/student-course-subject/Table";
 
 const AppRoutes = () => (
   <App>
@@ -43,6 +53,16 @@ const AppRoutes = () => (
       <Route exact path="/score-course" component={ScoreCourse} />
       <Route exact path="/score-course-student" component={ScoreCourseStudent} />
       <Route exact path="/score-course-student-subject" component={ScoreCourseStudentSubject} />
+      <Route exact path="/report-all-student" component={ReportAllStudent} />
+      <Route exact path="/report-all-student-score" component={ReportAllStudentScore} />
+      <Route exact path="/report-all-course" component={ReportAllCourse} />
+      <Route exact path="/report-all-course-score" component={ReportAllCourseScore} />
+      <Route exact path="/report-course" component={ReportCourse} />
+      <Route exact path="/report-course-student" component={ReportCourseStudent} />
+      <Route exact path="/report-course-student-subject" component={ReportCourseStudentSubject} />
+      <Route exact path="/report-student" component={ReportStudent} />
+      <Route exact path="/report-student-course" component={ReportStudentCourse} />
+      <Route exact path="/report-student-course-subject" component={ReportStudentCourseSubject} />
       <Route exact path="/nav-bar" component={NavigationBar} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/" component={Login} />

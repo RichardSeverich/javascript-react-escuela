@@ -12,8 +12,6 @@ import "./../../common/Table.css";
 const Table = (props) => {
 
   // Declare constant
-  console.log("props.location");
-  console.log(props.location);
   const [course] = useState(props.location.state.data);
   const [arrayData, setArrayData] = useState();
 

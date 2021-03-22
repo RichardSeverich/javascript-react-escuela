@@ -1,8 +1,8 @@
 import React from 'react';
 import { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
-import i18n from "./../../../i18n/i18n";
+import i18n from "./../../../../i18n/i18n";
 
-const getTableModel = (navigate) => {
+const getTableModel = ( navigate ) => {
 
   const selectOptionsGrade = {
     SBTTE: 'SBTTE',
@@ -21,7 +21,7 @@ const getTableModel = (navigate) => {
 
   const columns = [
     {
-      dataField: 'studentId',
+      dataField: 'id',
       text: i18n.studentTable.headerId,
       sort: true,
       filter: textFilter(),
@@ -30,7 +30,7 @@ const getTableModel = (navigate) => {
       }
     },
     {
-      dataField: 'studentDni',
+      dataField: 'dni',
       text: i18n.studentTable.headerDni,
       sort: true,
       filter: textFilter(),
@@ -39,7 +39,7 @@ const getTableModel = (navigate) => {
       }
     },
     {
-      dataField: 'studentName',
+      dataField: 'name',
       text: i18n.studentTable.headerName,
       sort: true,
       filter: textFilter(),
@@ -48,7 +48,7 @@ const getTableModel = (navigate) => {
       }
     },
     {
-      dataField: 'studentFatherLastName',
+      dataField: 'fatherLastName',
       text: i18n.studentTable.headerFatherLastName,
       sort: true,
       filter: textFilter(),
@@ -57,16 +57,16 @@ const getTableModel = (navigate) => {
       }
     },
     {
-      dataField: 'studentMotherLastName',
+      dataField: 'motherLastName',
       text: i18n.studentTable.headerMotherLastName,
       sort: true,
       filter: textFilter(),
       headerStyle: {
         width: '160px'
       }
-    }, 
+    },
     {
-      dataField: 'studentYunta',
+      dataField: 'yunta',
       text: i18n.studentTable.headerYunta,
       sort: true,
       filter: textFilter(),
@@ -75,7 +75,7 @@ const getTableModel = (navigate) => {
       }
     },
     {
-      dataField: 'studentGrade',
+      dataField: 'grade',
       text: i18n.studentTable.headerGrade,
       sort: true,
       filter: selectFilter({
@@ -86,7 +86,7 @@ const getTableModel = (navigate) => {
       }
     },
     {
-      dataField: 'studentWeapon',
+      dataField: 'weapon',
       text: i18n.studentTable.headerWeapon,
       sort: true,
       filter: selectFilter({
@@ -97,7 +97,7 @@ const getTableModel = (navigate) => {
       }
     },
     {
-      dataField: 'studentPromo',
+      dataField: 'promo',
       text: i18n.studentTable.headerPromo,
       sort: true,
       filter: textFilter(),
@@ -107,7 +107,7 @@ const getTableModel = (navigate) => {
     },
     {
       dataField: 'add',
-      text: i18n.common.ButtonSelect,
+      text: i18n.common.ButtonRegistration,
       headerStyle: {
         width: '120px'
       },

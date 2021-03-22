@@ -1,0 +1,49 @@
+{
+  "reportStudentCourse": [
+    {
+      "id": "1000",
+      "courseId": "1000",
+      "courseName": "Satinador 2015",
+      "subjectName": "ENTRENAMIENTO FISICO",
+      "subjectScore": "90",
+      "creationDate": "2015-05-21",
+      "updateDate": "2015-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1001",
+      "courseId": "1001",
+      "courseName": "Satinador 2016",
+      "subjectName": "DEFENSA PERSONAL",
+      "subjectScore": "80",
+      "creationDate": "2016-05-21",
+      "updateDate": "2016-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1002",
+      "courseId": "1002",
+      "courseName": "Satinador 2017",
+      "subjectName": "MARCHAS",
+      "subjectScore": "70",
+      "creationDate": "2017-05-21",
+      "updateDate": "2017-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "id": "1003",
+      "courseId": "1003",
+      "courseName": "Satinador 2018",
+      "subjectName": "INSTRUCCIÓN DE TIRO",
+      "subjectScore": "70",
+      "creationDate": "2018-05-21",
+      "updateDate": "2018-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    }
+  ]
+}
+
