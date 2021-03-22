@@ -17,7 +17,6 @@ const Form = (props) => {
   const [isEdit, setIsEdit] = useState(props.location.state);
   const [colorFormText, setColorFormText] = useState(colorFormReset);
 
-  console.log("isEdit " + isEdit);
   let id = isEdit ? isEdit.data.id : "";
   let name = isEdit ? isEdit.data.name : "";
 
@@ -33,7 +32,6 @@ const Form = (props) => {
       createdBy: username,
       updatedBy: username,
     }
-    console.log(colorFormText);
     let isValid = handleValidations(body, setColorFormText, colorFormReset);
     if(isValid){
       if(isEdit) {

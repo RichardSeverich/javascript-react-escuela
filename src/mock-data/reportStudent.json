@@ -1,0 +1,74 @@
+{
+  "reportStudent": [
+    {
+      "idCourse": "1000",
+      "courseName": "Satinador 2015",
+      "subjectName": "ENTRENAMIENTO FISICO",
+      "subjectScore": "90",
+      "creationDate": "2015-05-21",
+      "updateDate": "2015-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "idCourse": "1001",
+      "courseName": "Satinador 2016",
+      "subjectName": "DEFENSA PERSONAL",
+      "subjectScore": "80",
+      "creationDate": "2016-05-21",
+      "updateDate": "2016-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "idCourse": "1002",
+      "courseName": "Satinador 2017",
+      "subjectName": "MARCHAS",
+      "subjectScore": "70",
+      "creationDate": "2017-05-21",
+      "updateDate": "2017-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "idCourse": "1003",
+      "courseName": "Satinador 2018",
+      "subjectName": "INSTRUCCIÓN DE TIRO",
+      "subjectScore": "70",
+      "creationDate": "2018-05-21",
+      "updateDate": "2018-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "idCourse": "1004",
+      "courseName": "Satinador 2019",
+      "subjectName": "NATACION",
+      "subjectScore": "100",
+      "creationDate": "2019-05-21",
+      "updateDate": "2019-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "idCourse": "1005",
+      "courseName": "Satinador 2020",
+      "subjectName": "LECTURA DE CARTAS Y NAVEGACION",
+      "subjectScore": "20",
+      "creationDate": "2020-05-21",
+      "updateDate": "2020-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    },
+    {
+      "idCourse": "1006",
+      "courseName": "Condor 2015",
+      "subjectName": "TECNICA DE ARMAS",
+      "subjectScore": "30",
+      "creationDate": "2015-05-21",
+      "updateDate": "2015-05-22",
+      "createdBy": "admin",
+      "updatedBy": "admin"
+    }
+  ]
+}

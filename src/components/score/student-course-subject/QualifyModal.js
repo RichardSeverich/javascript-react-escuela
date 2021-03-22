@@ -12,7 +12,7 @@ const QualifyModal = (props) => {
     score: ""
   }
 
-  const [isEdit, setIsEdit] = useState(false);
+  const [,setIsEdit] = useState(false);
   const [student] = useState(props.student);
   const [colorFormText, setColorFormText] = useState(colorFormReset);
 
@@ -28,7 +28,7 @@ const QualifyModal = (props) => {
     const username = window.localStorage.getItem("username");
     let body = {
       idSubject: props.data.idSubject,
-      idStudent: student.id,
+      idStudent: student.studentId,
       score: valueScore,
       createdBy: username,
       updatedBy: username,

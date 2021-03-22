@@ -11,6 +11,7 @@ import scoreHeadTable from "./spanish/ScoreHeadTable"
 import common from "./spanish/Common"
 import messages from "./spanish/Messages"
 import qualifyModal from "./spanish/QualifyModal"
+import reports from "./spanish/Reports"
 
 const i18n = {
   navBar,
@@ -25,7 +26,8 @@ const i18n = {
   subjectTable,
   common,
   scoreHeadTable,
-  qualifyModal
+  qualifyModal,
+  reports
 }
 
 export default i18n;

@@ -13,11 +13,10 @@ const Form = (props) => {
   const colorFormReset = {
     name: ""
   }
-  
+
   const [isEdit, setIsEdit] = useState(props.location.state);
   const [colorFormText, setColorFormText] = useState(colorFormReset);
 
-  console.log("isEdit " + isEdit);
   let id = isEdit ? isEdit.data.id : "";
   let name = isEdit ? isEdit.data.name : "";
 

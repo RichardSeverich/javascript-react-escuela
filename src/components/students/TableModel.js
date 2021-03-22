@@ -201,7 +201,7 @@ const getTableModel = (navigateForm, handleEdit, handleDelete) => {
       formatter: (cell, row, rowIndex) => (
         <button
         className="btn btn-danger"
-        onClick={() => handleDelete("users/", row.id)}
+        onClick={() => handleDelete("students/", row.id)}
         >
           {i18n.studentTable.delete}
         </button>

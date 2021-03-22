@@ -3,7 +3,7 @@
     {
       "id": 1000,
       "idCourse": 1003,
-      "idStudent": 1000,
+      "studentId": 1000,
       "courseName": "Satinador 2000",
       "studentDni": "12356",
       "studentName": "Bart",
@@ -21,7 +21,7 @@
     {
       "id": 1001,
       "idCourse": 1003,
-      "idStudent": 1001,
+      "studentId": 1001,
       "courseName": "Satinador 2000",
       "studentDni": "12356",
       "studentName": "Liza",
@@ -39,7 +39,7 @@
     {
       "id": 1002,
       "idCourse": 1003,
-      "idStudent": 1002,
+      "studentId": 1002,
       "courseName": "Satinador 2000",
       "studentDni": "12356",
       "studentName": "Homero",
@@ -57,7 +57,7 @@
     {
       "id": 1003,
       "idCourse": 1003,
-      "idStudent": 1003,
+      "studentId": 1003,
       "courseName": "Satinador 2000",
       "studentDni": "12356",
       "studentName": "Marge",
@@ -75,7 +75,7 @@
     {
       "id": 1004,
       "idCourse": 1003,
-      "idStudent": 1004,
+      "studentId": 1004,
       "courseName": "Satinador 2000",
       "studentDni": "12356",
       "studentName": "Magui",

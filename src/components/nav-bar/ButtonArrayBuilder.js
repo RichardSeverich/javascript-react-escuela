@@ -25,27 +25,27 @@ const getArrayScore = (navigateForm) => {
 }
 
 const getArrayReports = (
-  navigateReportUsers, 
-  navigateReportStudents,
-  navigateReportCourses,
-  navigateReportSubjects
+  navigateReportStudent, 
+  navigateReportCourse,
+  navigateReportStudentCourse,
+  navigateReportCourseStudent
   ) => {
   const buttonsArrayReports= [
     {
-      navigate: navigateReportUsers,
-      ButtonContent: i18n.navBar.buttonReportUsers
+      navigate: navigateReportStudent,
+      ButtonContent: i18n.navBar.buttonReportScoreStudent
     },
     {
-      navigate: navigateReportStudents,
-      ButtonContent: i18n.navBar.buttonReportStudents
+      navigate: navigateReportCourse,
+      ButtonContent: i18n.navBar.buttonReportScoreCourse
     },
     {
-      navigate: navigateReportCourses,
-      ButtonContent: i18n.navBar.buttonReportCourses
+      navigate: navigateReportStudentCourse,
+      ButtonContent: i18n.navBar.buttonReportScoreStudentCourse
     },
     {
-      navigate: navigateReportSubjects,
-      ButtonContent: i18n.navBar.buttonReportSubjects
+      navigate: navigateReportCourseStudent,
+      ButtonContent: i18n.navBar.buttonReportScoreCourseStudent
     }
   ]
  return buttonsArrayReports;
