@@ -2,6 +2,7 @@ const i18n = {
   tableTitle: "Usuarios",
   tableLoadingSection: "Cargando...",
   tableExportButton: "Exportar a CSV",
+  tableExportButtonPdf: "Exportar a PDF",
   headerId: "Id",
   headerUsername: "Username",
   headerPassword: "Contrasena",

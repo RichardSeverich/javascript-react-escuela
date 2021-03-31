@@ -40,6 +40,14 @@ const Table = (props) => {
           </div>
           <div className="card-body card-body-table">
             <CommonTable 
+              tableTitle = {[
+                i18n.common.TitleCoursesSubjectsShow, 
+                i18n.common.headCourse + course.name, 
+                i18n.subjectTable.tableTitle
+              ]}
+              arrayExcluded = {[
+                'delete'
+              ]}
               arrayData={arrayData} 
               columns={getTableModel(handleDelete)}>
             </CommonTable>

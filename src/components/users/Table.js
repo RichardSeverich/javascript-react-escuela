@@ -49,6 +49,19 @@ const Table = () => {
           </div>
           <div className="card-body card-body-table ">
             <CommonTable 
+              tableTitle = {i18n.userTable.tableTitle}
+              arrayExcluded = {[
+                'edit', 
+                'delete',
+                'id',
+                'email',
+                'address',
+                'password',
+                'creationDate',
+                'updateDate',
+                'createdBy',
+                'updatedBy',
+              ]}
               arrayData={arrayData} 
               columns={getTableModel(navigateForm, handleEditNavigate, handleDelete)}>
             </CommonTable>

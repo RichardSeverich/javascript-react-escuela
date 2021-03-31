@@ -85,6 +85,15 @@ const Table = (props) => {
           </div>
           <div className="card-body card-body-table">
             <CommonTable 
+              tableTitle = {[
+                i18n.common.TitleScore, 
+                i18n.scoreHeadTable.headCourse + course.name, 
+                i18n.scoreHeadTable.headStudent + student.studentName + " " + student.studentFatherLastName,
+                i18n.common.headAverage + " " + studentAverage
+              ]}
+              arrayExcluded = {[
+                'add'
+              ]}
               arrayData={arrayScore}
               columns={getTableModel(updatePropsForModal)}>
             </CommonTable>
