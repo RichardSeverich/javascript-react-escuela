@@ -75,6 +75,12 @@ const Table = (props) => {
           </div>
           <div className="card-body card-body-table">
             <CommonTable 
+              tableTitle = {[
+                i18n.common.TitleReportsCourseStudent, 
+                i18n.scoreHeadTable.headCourse + course.name, 
+                i18n.scoreHeadTable.headStudent + student.studentName + " " + student.studentFatherLastName,
+                i18n.common.headAverage + " " + studentAverage
+              ]}
               arrayData={arrayScore}
               columns={getTableModel()}>
             </CommonTable>

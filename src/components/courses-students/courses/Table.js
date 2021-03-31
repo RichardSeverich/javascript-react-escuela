@@ -7,7 +7,7 @@ import CommonTable from "./../../common/CommonTable";
 import Loading from "./../../common/Loading"
 import i18n from "./../../../i18n/i18n";
 import getTableModel from "./TableModel";
-import { handleGet} from "./../../handle/HandleManager";
+import { handleGet } from "./../../handle/HandleManager";
 import "./../../common/Table.css";
 
 const Table = (props) => {
@@ -24,20 +24,20 @@ const Table = (props) => {
     if (isMounted) {
       handleGet("courses/", setArrayData);
     }
-    return () => { 
+    return () => {
       window.location.reload();
-      isMounted = false 
+      isMounted = false
     };
   }, [props]);
 
-  const navigate= (row) => {
-    let pathRegistry =  "/courses-students-table-registry-students";
-    let pathShow =  "/courses-students-table-show-students";
-    let  path = isRegistry ? pathRegistry : pathShow;
-    history.push({ 
+  const navigate = (row) => {
+    let pathRegistry = "/courses-students-table-registry-students";
+    let pathShow = "/courses-students-table-show-students";
+    let path = isRegistry ? pathRegistry : pathShow;
+    history.push({
       pathname: path,
-      state: { 
-        data: row ,
+      state: {
+        data: row,
         edit: true
       }
     })
@@ -54,16 +54,24 @@ const Table = (props) => {
         <div className="card card-table">
           <div className="card-header">
             <h3 align="center">{
-              isRegistry ? 
-              i18n.common.TitleCoursesStudentsRegistry :
-              i18n.common.TitleCoursesStudentsShow
-              }
+              isRegistry ?
+                i18n.common.TitleCoursesStudentsRegistry :
+                i18n.common.TitleCoursesStudentsShow
+            }
             </h3>
             <h3 align="center">{i18n.common.headSelectCourse}</h3>
           </div>
           <div className="card-body card-body-table">
-            <CommonTable 
-              arrayData={arrayData} 
+            <CommonTable
+              tableTitle={[
+                isRegistry ?
+                  i18n.common.TitleCoursesStudentsRegistry :
+                  i18n.common.TitleCoursesStudentsShow
+              ]}
+              arrayExcluded = {[
+                'add'
+              ]}
+              arrayData={arrayData}
               columns={getTableModel(navigate)}>
             </CommonTable>
           </div>

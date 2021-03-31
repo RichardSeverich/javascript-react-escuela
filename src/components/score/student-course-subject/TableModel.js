@@ -70,7 +70,7 @@ const getTableModel = (modal) => {
     },
     {
       dataField: 'add',
-      text: i18n.common.ButtonRegistration,
+      text: i18n.common.ButtonQualify,
       headerStyle: {
         width: '120px'
       },

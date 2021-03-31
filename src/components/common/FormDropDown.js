@@ -1,9 +1,7 @@
 import React from "react";
 
 const FormDropDown = (props) => {
-
   const options = () => {
-    //console.log(props.options);
     let ops = props.options.map((option, index) => {
       return (
         <option 

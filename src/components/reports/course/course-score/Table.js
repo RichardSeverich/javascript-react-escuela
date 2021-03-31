@@ -39,6 +39,10 @@ const Table = (props) => {
           </div>
           <div className="card-body card-body-table">
             <CommonTable 
+              tableTitle = {[
+                i18n.common.TitleReportsCourse, 
+                i18n.common.headCourse + course.name
+              ]}
               arrayData={arrayData}
               columns={getTableModel()}>
             </CommonTable>

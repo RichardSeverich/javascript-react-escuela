@@ -9,3 +9,12 @@ body{
 .card-body-table {
   overflow-x: auto;
 }
+
+#pdf-button {
+  float: left;
+  margin-left: 15px;
+}
+
+#csv-button {
+  float: left;
+}

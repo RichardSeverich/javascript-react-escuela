@@ -53,6 +53,21 @@ const Table = (props) => {
           </div>
           <div className="card-body card-body-table">
             <CommonTable 
+              tableTitle={[
+                i18n.common.TitleCoursesStudentsRegistry,
+                i18n.common.headCourse + course.name,
+                i18n.studentTable.tableTitle 
+              ]}
+              arrayExcluded = {[
+                'add',
+                'id',
+                'email',
+                'address',
+                'creationDate',
+                'updateDate',
+                'createdBy',
+                'updatedBy',
+              ]}
               arrayData={arrayData} 
               columns={getTableModel(handleAdd)}>
             </CommonTable>
