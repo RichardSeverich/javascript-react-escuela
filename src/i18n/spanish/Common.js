@@ -11,6 +11,7 @@ const i18n = {
   TitleReportsCourse: "Reportes por Curso",
   TitleReportsCourseStudent: "Reportes por Curso/Estudiante",
   TitleReportsStudentCourse: "Reportes por Estudiante/Curso",
+  TitleReportsStudentCourseCertificate: "Reportes de certificado por Estudiante/Curso",
   headCourse: "Curso: ",
   headSelectCourse: "Seleccione Curso",
   headStudent: "Estudiante: ",

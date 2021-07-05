@@ -11,7 +11,9 @@ import { handleCreate, handleEdit } from "./../handle/HandleManager";
 const Form = (props) => {
 
   const colorFormReset = {
-    name: ""
+    name: "",
+    startDate:"",
+    finishDate:""
   }
 
   const [isEdit, setIsEdit] = useState(props.location.state);
@@ -19,20 +21,28 @@ const Form = (props) => {
 
   let id = isEdit ? isEdit.data.id : "";
   let name = isEdit ? isEdit.data.name : "";
+  let startDate = isEdit ? isEdit.data.startDate : "";
+  let finishDate = isEdit ? isEdit.data.finishDate : "";
 
   const { value: valueName, bind: bindName, reset: resetName } = useInput(name);
+  const { value: valueStartDate, bind: bindStartDate, reset: resetStartDate } = useInput(startDate);
+  const { value: valueFinishDate, bind: bindFinishDate, reset: resetFinishDate } = useInput(finishDate);
 
   const handleReset = () => {
     resetName();
+    resetStartDate();
+    resetFinishDate();
   }
   const handleAdd = () => {
     const username = window.localStorage.getItem("username");
     let body = {
       name: valueName,
+      startDate: valueStartDate,
+      finishDate: valueFinishDate,
       createdBy: username,
       updatedBy: username,
     }
-    console.log(colorFormText);
+    console.log(body);
     let isValid = handleValidations(body, setColorFormText, colorFormReset);
     if(isValid){
       if(isEdit) {
@@ -60,6 +70,20 @@ const Form = (props) => {
                 minLength="3"
                 maxLength="120"
                 bind={bindName}
+              ></FormInput>
+              <FormInput
+                labelContent={i18n.courseForm.formLabelStartDate} 
+                formText={i18n.courseForm.formTextStartDate}
+                color={colorFormText.startDate}
+                type="date"
+                bind={bindStartDate}
+              ></FormInput>
+              <FormInput
+                labelContent={i18n.courseForm.formLabelFinishDate} 
+                formText={i18n.courseForm.formTextFinishDate}
+                color={colorFormText.finishDate}
+                type="date"
+                bind={bindFinishDate}
               ></FormInput>
               <div className="text-center">
                 <button

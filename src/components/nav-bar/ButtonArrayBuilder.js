@@ -28,7 +28,8 @@ const getArrayReports = (
   navigateReportStudent, 
   navigateReportCourse,
   navigateReportStudentCourse,
-  navigateReportCourseStudent
+  navigateReportCourseStudent,
+  navigateReportCertificate
   ) => {
   const buttonsArrayReports= [
     {
@@ -46,6 +47,10 @@ const getArrayReports = (
     {
       navigate: navigateReportCourseStudent,
       ButtonContent: i18n.navBar.buttonReportScoreCourseStudent
+    },
+    {
+      navigate: navigateReportCertificate,
+      ButtonContent: i18n.navBar.buttonReportCertificate
     }
   ]
  return buttonsArrayReports;

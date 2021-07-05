@@ -24,6 +24,24 @@ const getTableModel = (navigateForm, handleEdit, handleDelete) => {
       }
     },
     {
+      dataField: 'startDate',
+      text: i18n.courseTable.headerStarDate,
+      sort: true,
+      filter: dateFilter(),
+      headerStyle: {
+        width: '220px'
+      }
+    }, 
+    {
+      dataField: 'finishDate',
+      text: i18n.courseTable.headerFinishDate,
+      sort: true,
+      filter: dateFilter(),
+      headerStyle: {
+        width: '220px'
+      }
+    },
+    {
       dataField: 'creationDate',
       text: i18n.courseTable.headerCreationDate,
       sort: true,

@@ -8,6 +8,7 @@ import i18n from "./../../i18n/i18n"
 //import logo from "./logo.svg";
 import logoCondores from "./logo-condores.jpg";
 import "./NavigationBar.css";
+import openJacobitosFido from "./../../console/openJacobitusFido"
 
 const NavigationBar = () => {
 
@@ -49,8 +50,11 @@ const NavigationBar = () => {
   const navigateReportCourse = () => { history.push("/report-all-course");}
   const navigateReportStudentCourse= () => { history.push("/report-student");}
   const navigateReportCourseStudent= () => { history.push("/report-course");}
-  const navigateSystem= () => { history.push("/");}
-  const navigateLogin = () => { history.push("/login");}
+  const navigateReportCertificate= () => { history.push("/report-student-certificate");}
+  const navigateSystem= () => { /*history.push("/");*/}
+  const navigateLogin = () => { history.push("/login");
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');}
   const btnUsers = arrayBuilder.getArrayAdmin(navigateUsersForm, navigateUsersTable);
   const btnStudents = arrayBuilder.getArrayAdmin(navigateStudentsForm, navigateStudentsTable);
   const btnCourses = arrayBuilder.getArrayAdmin(navigateCoursesForm, navigateCoursesTable);
@@ -62,7 +66,8 @@ const NavigationBar = () => {
     navigateReportStudent, 
     navigateReportCourse,
     navigateReportStudentCourse,
-    navigateReportCourseStudent
+    navigateReportCourseStudent,
+    navigateReportCertificate
   );
   const btnOptions = arrayBuilder.getArrayOptions(navigateSystem, navigateLogin)
 
@@ -110,6 +115,11 @@ const NavigationBar = () => {
         <ButtonGroup
           buttonGroupTitle={i18n.navBar.groupButtonsScores}
           buttonsArray={btnScores}
+        >
+        </ButtonGroup>
+        <ButtonGroup
+          buttonGroupTitle={i18n.navBar.groupButtonsFirm}
+          buttonsArray={[{navigate: openJacobitosFido, ButtonContent: "Jacobitus Fido"}]}
         >
         </ButtonGroup>
         <ButtonGroup

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import {  } from "bootstrap"
 import useInput from "./../../hooks/UseInput";
 import FormInput from "./../../common/FormInput";
 import i18n from "./../../../i18n/i18n";
@@ -44,7 +45,7 @@ const QualifyModal = (props) => {
     }
   };
 
-  return (
+  return !props.valueModal? (
     <div 
       className="modal fade" 
       id="qualifyModal" 
@@ -78,7 +79,7 @@ const QualifyModal = (props) => {
         </div>
       </div>
     </div>
-  );
+    ):<div/>;
 };
 
 export default QualifyModal;

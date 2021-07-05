@@ -1,12 +1,12 @@
 import React from 'react';
 import { textFilter, dateFilter } from 'react-bootstrap-table2-filter';
-import i18n from "./../../../i18n/i18n";
+import i18n from "./../../../../i18n/i18n";
 
 const getTableModel = (navigate) => {
 
   const columns = [
     {
-      dataField: 'id',
+      dataField: 'courseId',
       text: i18n.courseTable.headerId,
       sort: true,
       filter: textFilter(),
@@ -15,30 +15,12 @@ const getTableModel = (navigate) => {
       }
     },
     {
-      dataField: 'name',
+      dataField: 'courseName',
       text: i18n.courseTable.headerName,
       sort: true,
       filter: textFilter(),
       headerStyle: {
         width: '150px'
-      }
-    },
-    {
-      dataField: 'startDate',
-      text: i18n.courseTable.headerStarDate,
-      sort: true,
-      filter: dateFilter(),
-      headerStyle: {
-        width: '220px'
-      }
-    }, 
-    {
-      dataField: 'finishDate',
-      text: i18n.courseTable.headerFinishDate,
-      sort: true,
-      filter: dateFilter(),
-      headerStyle: {
-        width: '220px'
       }
     },
     {
