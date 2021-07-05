@@ -32,6 +32,9 @@ import ReportCourseStudentSubject from "./components/reports/course-student/cour
 import ReportStudent from "./components/reports/student-course/students/Table";
 import ReportStudentCourse from "./components/reports/student-course/courses/Table";
 import ReportStudentCourseSubject from "./components/reports/student-course/student-course-subject/Table";
+import ReportStudentCertificate from "./components/reports/certificate-student-course/students/Table";
+import ReportStudentCourseCertificate from "./components/reports/certificate-student-course/courses/Table";
+import ReportStudentCourseSubjectCertificate from "./components/reports/certificate-student-course/student-course-subject/Table";
 
 const AppRoutes = () => (
   <App>
@@ -63,6 +66,9 @@ const AppRoutes = () => (
       <Route exact path="/report-student" component={ReportStudent} />
       <Route exact path="/report-student-course" component={ReportStudentCourse} />
       <Route exact path="/report-student-course-subject" component={ReportStudentCourseSubject} />
+      <Route exact path="/report-student-certificate" component={ReportStudentCertificate} />
+      <Route exact path="/report-certificate-student-course" component={ReportStudentCourseCertificate} />
+      <Route exact path="/report-certificate-student-course-subject" component={ReportStudentCourseSubjectCertificate} />
       <Route exact path="/nav-bar" component={NavigationBar} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/" component={Login} />
